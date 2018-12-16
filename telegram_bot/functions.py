@@ -11,7 +11,8 @@ def logs():
 def handlersProcess(updater, dispatcher):
     # Dictionary containing all the command handlers
     handlers_dict = dict(engega=CommandHandler('engega', commands.engega),
-                         apaga=CommandHandler('apaga', commands.apaga))
+                         apaga=CommandHandler('apaga', commands.apaga),
+                         mode=CommandHandler('mode', commands.mode))
 
     # Adding the handlers to the dispatcher.
     for command in handlers_dict:

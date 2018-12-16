@@ -13,3 +13,9 @@ def apaga(bot, update):
         bot.send_message(chat_id=update.message.chat_id, reply_to_message_id=update.message.message_id, text="Apagant els llums...")
         lights.turnoff()
         
+def mode(bot, update, args):
+    num = int(args[0])
+    if (num == 1):
+        bot.send_message(chat_id=update.message.chat_id, reply_to_message_id=update.message.message_id, text="Entrant a mode ràpid...")
+        while (update.message.chat_id != userid):
+            lights.fast()
