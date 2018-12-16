@@ -7,7 +7,3 @@ def turnon():
     
 def turnoff():
     GPIO.output(pin, GPIO.LOW)
-    
-def fast():
-    time.sleep(.random.randint(10,500))
-    
