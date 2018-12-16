@@ -1,4 +1,4 @@
-import gpio
+from gpio import *
 
 def turnon():
     GPIO.output(pin, GPIO.HIGH)

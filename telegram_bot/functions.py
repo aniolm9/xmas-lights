@@ -20,9 +20,6 @@ def handlersProcess(updater, dispatcher):
     # Error handler
     dispatcher.add_error_handler(handlers.error)
 
-    # Entry and exit handler
-    dispatcher.add_handler(MessageHandler(None, handlers.entryAndExit))
-
     # Start the bot
     updater.start_polling()
 
